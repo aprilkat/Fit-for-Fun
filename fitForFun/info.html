@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!--
+    Fit for fun project info
+    Date: 6/27/2020
+    Author: April Bollinger
+    -->
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Fit for Fun/More Info</title>
+</head>
+
+<body>
+  <header>
+    <h1>Fit for Fun</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Classes.html">Classes</a>
+      <a href="info.html">More Info</a>
+    </nav>
+  </header>
+  <form action="thankyou.html" method="get">
+
+    <fieldset><!--first part of the form-->
+      <legend>Contact Information</legend>
+      <label for="fname">First Name:</label>
+      <input autofocus type="text" name="Firstname" id="fname" required placeholder="First Name">
+      <label for="lname">Last Name:</label>
+      <input type="text" name="Lastname" id="lname" required placeholder="Last Name">
+      <label for="email">Email:</label>
+      <input type="email" name="Email" id="email" placeholder="example@email.com">
+      <label for="tel">Phone Number:</label>
+      <input type="tel" name="Phone" id="tel" placeholder="ex. 497-398-4586">
+      <label for="method">Preferred method of contact:</label>
+      <input list="methods" name="Method" id="method">
+      <datalist id="methods">
+        <option value="Telephone">
+        <option value="Email">
+        <option value="Paper Mail">
+      </datalist>
+
+    </fieldset>
+
+    <fieldset><!--second part of the form-->
+      <legend>Classes of Interest</legend>
+      <label for="CT">Cross Training</label>
+      <input type="checkbox" id="CT" name="Cross Training">
+      <label for="Sprint">Sprint</label>
+      <input type="checkbox" id="Sprint" name="Sprint">
+      <label for="Spin">Spin</label>
+      <input type="checkbox" id="Spin" name="Spin">
+      <label for="BP">Bodypump</label>
+      <input type="checkbox" id="BP" name="BP">
+      <label for="BC">Body Combat</label>
+      <input type="checkbox" id="BC" name="BC">
+      <label for="SI">Step Interval</label>
+      <input type="checkbox" id="SI" name="SI">
+      <label for="ACT">Advanced Cross Traning</label>
+      <input type="checkbox" id="ACT" name="ACT">
+      <label for="Mixfit">MixxedFit</label>
+      <input type="checkbox" id="Mixfit" name="Mixfit">
+      <label for="Zumba">Zumba</label>
+      <input type="checkbox" id="Zumba" name="Zumba">
+
+    </fieldset>
+
+    <fieldset><!--third part of the form-->
+      <legend>Preferred time</legend>
+      <label for="am">AM</label>
+      <input type="radio" id="am" name="time">
+      <label for="pm">PM</label>
+      <input type="radio" id="pm" name="time">
+    </fieldset>
+
+    <fieldset><!--text box-->
+      <legend>Additional Information or questions</legend>
+      <textarea name="addinfo" rows="8" cols="80">Additional Info or Questions...</textarea>
+    </fieldset>
+
+    <input type="submit" name="Submit" value="Submit">
+
+  </form>
+
+  <footer>
+    <p class="address">3499 S. Pine St<br>Louisville, Missouri 63848</p>
+    <p class="contactnum">Phone Number: (417)474-9473</p>
+    &copy; 2020 April Bollinger
+
+  </footer></body>
+
+</html>
